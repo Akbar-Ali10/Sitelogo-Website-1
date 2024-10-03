@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    background-color: #262626c4;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px; 
+    
+}
+.header-logo{
+    color: white;
+}
+.header-logo h1{
+    animation: changeColorMyLogo 2s ease infinite;
+}
+@keyframes changeColorMyLogo {
+    0%{
+        color: #FFC555;                   
+    }25%{
+        color: blueviolet;
+    }50%{
+        color: chartreuse;
+    }75%{
+        color: coral;
+    }100%{
+        color: #8b59ff;
+    }
+}
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+.header-nav ul li{
+    padding-left: 50px;
+    color: #FFFFFF;
+}
+.header-nav ul li:hover{
+    color: #FFC555;
+}
+.header-nav ul  button{
+    padding: 10px 35px;
+    border-radius: 8px;
+    background-color:#262626c4;
+    border: 1px solid #262626;
+    color: white;
+    margin-left: 20px;
+
+}
+.header-nav ul  button:hover{
+    background-color: #FFC555;
+    color: #262626;
+    transition: all 0.8s;
+    border: 1px solid #FFc555;
+}
+/* ///////////////////////////////////////////////////////////////////// */
+
+.section-main{
+    display: flex;
+    padding-top: 100px;
+}
+
+.section-img{
+    display: flex;
+}
+
+.banner-2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+}
+.banner-1{
+    position: absolute;
+    right: 350px;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    max-width: 300px;
+}
+.s-h h1{
+    max-width: 400px;
+    font-size: 46px;
+    color: white;
+    animation: move 1s ease alternate-reverse forwards;
+}
+.s-h h1 span{
+    color: #DA22FF;
+}
+.s-p p{
+    max-width: 400px;
+    padding: 20px 0;
+    color: #fff;
+    animation: move 1.2s ease alternate-reverse forwards;
+}
+.s-btn button{
+    background-color: #FFE259;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    animation: move 1.4s ease alternate-reverse forwards;
+}
+.s-btn button:hover{
+    background-color: #262626;
+    color: #FFC555;
+    border: 1px solid #262626;
+}
+
+
+@keyframes move {
+  0%{
+    filter: blur(0px);
+    transform: translateX(20px);
+  }    
+  100%{
+    filter: blur(100px);
+    transform: translateX(-200px);
+  }
+}
+
+
+
+/* ///////////////////////////////////////// */
